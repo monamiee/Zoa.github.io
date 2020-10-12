@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+
+    ::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, rgba(90,161,255,1) 0%, rgba(0,75,174,1) 100%);
+}
+
+    ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, .25);
+    border-radius: 10px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+    width: 50px;
+}
+
+body, html{
+    height: calc(100% - 2em);
+    margin: 0;
+    font-family: 'Montserrat';
+    color: #ffffff;
+}
+
+body {
+    background: rgb(90,161,255);
+    background: linear-gradient(180deg, rgba(90,161,255,1) 0%, rgba(0,75,174,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav {
+    font-weight: 400;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 25%);
+    margin: 1vw 8vw 2vw 8vw; 
+    padding: -1em;
+    border-radius: 55px 55px 55px 55px;
+    height: 60px;
+}
+
+ul#Header {
+    margin: 0vw 2vw 0.1vw 2vw;
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
+    overflow: hidden;
+    list-style: none;
+    font-size: 1em;
+    text-align: center;
+    padding: 0em;
+}
+
+li {
+    float: center;
+    margin: 0em;
+    padding: 0em;
+}
+
+#Logo {
+    transform-origin: 10% 50%;
+}
+
+.ReponsiveImage {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    align-items: center;
+}
+
+.Text {
+    padding-top: 20px;
+}
+
+
+li.Text :hover{
+    color: #105ABC;
+    font-weight: 700;
+    animation: Grow 2s;
+}
+
+#Profile {
+    position: absolute;
+    top: 1.4vw;
+    left: 2vw;
+    width: 4vw;
+    border-radius: 50%;
+}
+
+div#Slider {
+    background-image: url("./Pictures/Background\ Slide.svg");
+    background-repeat: no-repeat;
+    background-position: 5vw 20vh;
+    background-size: 90vw;
+    height: 92%;
+    margin: 0 0 2.6vw 0;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+img#TitleImage {
+    width: 55%;
+    height: auto;
+    margin: 5% 0% 0% 20%;
+}
+
+p#BookInfo {
+    color: black;
+    font-weight: 500;
+    font-size: .9em;
+    margin: 8vh 0vw 0vw 10vw;
+    line-height: 2vw;
+}
+
+img#CoverImage {
+    width: 45%;
+    height: auto;
+    padding: 5% 0% 0% 20%;
+    margin: 0em;
+}
+
+div#AnimalInsideText {
+    color: black;
+    size: 1.5em;
+    font-weight: 600;
+    margin: 3vw 0vw 0vw 10vw;
+}
+
+ul#AnimalsInside {
+    margin: 1.5vw 2vw 0vw 10vw;
+    display: grid;
+    grid-template-columns: 6vw 6vw 6vw 6vw 6vw;
+    overflow: hidden;
+    text-align: center;
+    list-style: none;
+    padding: 0em;
+    column-width: 10vw;
+    grid-template-rows: 6vw;
+    grid-column-gap: 0.6vw;
+    height: 10vw;
+}
+
+.AnimalIcon {
+    padding-top: 10%;
+    width: 75%;
+    height: auto;
+}
+
+.grow2 { 
+    transition: all .2s ease-in-out; 
+}
+
+.grow2:hover { 
+transform: scale(1.2); 
+}
+
+div.AnimalName {
+    visibility: hidden;
+    color: black;
+    font-weight: 600;
+    align-items: center;
+}
+
+.grow2:hover div{
+    visibility: visible;
+}
+
+@keyframes Grow {
+    5%,
+	50% {
+		transform: scale(1);
+	}
+	10% {
+		transform: scale(0.9);
+	}
+    20% {
+		transform: scale(1.15);
+	}
+}

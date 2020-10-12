@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+
+    ::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, rgba(90,161,255,1) 0%, rgba(0,75,174,1) 100%);
+}
+
+    ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, .25);
+    border-radius: 10px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+    width: 50px;
+}
+
+body, html{
+    height: calc(100% - 2em);
+    margin: 0;
+    font-family: 'Montserrat';
+    color: #ffffff;
+}
+
+body {
+    background: rgb(90,161,255);
+    background: linear-gradient(180deg, rgba(90,161,255,1) 0%, rgba(0,75,174,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav {
+    font-weight: 400;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 25%);
+    margin: 1vw 8vw 2vw 8vw; 
+    padding: -1em;
+    border-radius: 55px 55px 55px 55px;
+    height: 60px;
+}
+
+nav ul {
+    margin: 0vw 2vw 0.1vw 2vw;
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
+    overflow: hidden;
+    list-style: none;
+    font-size: 1em;
+    text-align: center;
+    padding: 0em;
+}
+
+nav ul li {
+    float: center;
+    margin: 0em;
+    padding: 0em;
+}
+
+#Logo {
+    transform-origin: 10% 50%;
+}
+
+.ReponsiveImage {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    align-items: center;
+}
+
+.Text {
+    padding-top: 20px;
+}
+
+
+li.Text :hover{
+    color: #105ABC;
+    font-weight: 700;
+    animation: Grow 2s;
+}
+
+@keyframes Grow {
+    5%,
+	50% {
+		transform: scale(1);
+	}
+	10% {
+		transform: scale(0.9);
+	}
+    20% {
+		transform: scale(1.15);
+	}
+}
+
+#Profile {
+    position: absolute;
+    top: 1.4vw;
+    left: 2vw;
+    width: 4vw;
+    border-radius: 50%;
+}
+
+
+
+
+
+main {
+    margin: 5vw 4vw 2vw 4vw;
+    border-radius: 50px;
+    background-color: white;
+    width: 92%;
+}
+
+div#Animal {
+    color: #101010;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    padding: 3vw
+}
+
+div#info ul {
+    font-size: .85em;
+    line-height: 2em;
+}
+
+#AnimalImage {
+    padding-left: 11vw;
+    width: 24vw;
+    height: auto;
+}
+
+#Name {
+    font-size: 5em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+}
+
+#Species {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+#Title {
+    margin-top: 3vw;
+    font-size: 2em;
+    color: #AE4600;
+    font-weight: 700;
+}
+
+#Back {
+    border: solid #105ABC;
+    border-width: 0 .7vw .7vw 0;
+    display: inline-block;
+    padding: 0.7vw;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+a.BackButton {
+    margin-top: 6vw;
+    display: flex;
+}
+
+
+#ButtonText {
+    color: #105ABC;
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+div#ButtonText :hover {
+    animation: Grow 2s;
+}

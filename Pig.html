@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AnimalInfo.css">
+    <title>Pig</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="Text"><a href="index.html">HOME</a></li>
+                <li class="Text"><a href="Books.html">BOOKS</a></li>
+                <li><img src="Pictures/Logo.svg" alt="Zoa Logo" class="ReponsiveImage"></li>
+                <li class="Text"><a href="Explore.html">EXPLORE</a></li>
+                <li class="Text"><a href="About.html">ABOUT</a></li>
+            </ul>
+            <?php
+                require 'Includes/dbh_inc.html';
+
+                if(isset($_SESSION['userID']))
+                {      
+                    $id = $_SESSION['userID'];
+                    $img = "SELECT profilenum FROM users WHERE idUsers='$id';";
+                    $result = mysqli_query($connection,$img);
+
+                    if(!mysqli_num_rows($result) > 0)
+                    {
+                        header("Location: ../Profile.html?error=sqlerror");
+                        exit();
+                    }
+                    else
+                    {
+                        if($row = mysqli_fetch_assoc($result))
+                        {
+                            if($row['profilenum'] == 0)
+                            {
+                                echo '<a href="Profile.html"><img id="Profile" src="Pictures/Profile.svg"></a>';
+                            }
+                            else if($row['profilenum'] == 1)
+                            {
+                                echo '<a href="Profile.html"><img id="Profile" src="Pictures/Pig1.png"></a>';
+                            }                
+                        }
+                        else
+                        {
+                            header("Location: ../Profile.html?error=nouser");
+                            exit();
+                        }
+                    }
+                }
+                else
+                {
+                    echo '<a href="Login.html"><img id="Profile" src="Pictures/Profile.svg"></a>';
+                }
+            ?>
+        </nav>
+    </header>
+    <main>
+        <div id="Animal">
+            <div id="info">
+                <div id="Name" style="font-size: 4em;">
+                    Large White Pig
+                </div>
+                <div id="Species">
+                    Sus scrofa domesticus
+                </div>
+                <div id="Title">
+                    Did you know?
+                </div>
+                <ul>
+                    <li>
+                        Babi meringkuk berdekatan satu sama lain dan lebih suka tidur hidung ke hidung. Mereka bermimpi, seperti halnya manusia. Di lingkungan alami mereka, babi menghabiskan berjam-jam bermain, berjemur, dan menjelajah.                    </li>
+                    <li>
+                        Babi memiliki indra penunjuk arah yang baik dan dapat menemukan jalan pulang dalam jarak yang jauh.                    </li>
+                    <li>
+                        Seekor babi dewasa dapat berlari hingga 11 mil per jam.                    </li>
+                    <li>
+                        Babi minum hingga 14 galon air setiap hari.                    </li>
+                    <li>
+                        Babi adalah hewan yang sangat damai, jarang menunjukkan tingkah agresif. Kecuali dalam keadaan diprovokasi atau dalam keadaan terancam                    </li>
+                    <li>
+                        Babi memiliki indera penciuman yang luar biasa. Dapat dilihat dari bentuk hidung babi yang besar.                    </li>
+                    <li>
+                        Babi memiliki 15.000 selera! Manusia punya 9.000.                    </li>
+                </ul>
+                <a class="BackButton" href="Explore.html">
+                    <i id="Back"></i>
+                    <div id="ButtonText">
+                        Back
+                    </div>
+                </a>
+            </div>
+            <img id="AnimalImage" src="Pictures/Pig2.jpg">
+        </div>
+    </main>
+</body>
+</html>

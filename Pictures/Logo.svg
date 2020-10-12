@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="141" height="141" viewBox="0 0 141 141">
+  <g id="Group_3" data-name="Group 3" transform="translate(26.365 42.662)">
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="141" height="141" rx="70.5" transform="translate(-26.365 -42.662)" fill="#f0ded6"/>
+    <g id="Group_2" data-name="Group 2" transform="translate(-13.484 -22.206)">
+      <g id="Group_1" data-name="Group 1" transform="translate(0 0)">
+        <path id="Path_1" data-name="Path 1" d="M5315.7,1688.564c-8-14.711-31.823-15.54-41.222-1.456-8.119,12.171-14.6,26.263-15.705,37.791-.714,7.434,6.288,12.524,17.308,7.895,3.729-1.566,11.045-2.651,15.087-2.544l3.838.11a50.481,50.481,0,0,1,15.683,2.8c13.67,4.583,20.7,1.285,19.932-6.954C5329.487,1714.009,5322.167,1700.464,5315.7,1688.564Z" transform="translate(-5232.626 -1639.74)" fill="#167e87"/>
+        <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="12.554" cy="16.555" rx="12.554" ry="16.555" transform="translate(24.685 6.114) rotate(-12.433)" fill="#167e87"/>
+        <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="16.555" cy="12.554" rx="16.555" ry="12.554" transform="translate(62.851 32.087) rotate(-75.725)" fill="#167e87"/>
+        <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="14.859" cy="11.268" rx="14.859" ry="11.268" transform="translate(87.88 58.002) rotate(-68.485)" fill="#167e87"/>
+        <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="11.765" cy="15.238" rx="11.765" ry="15.238" transform="translate(0 42.812) rotate(-30.929)" fill="#167e87"/>
+      </g>
+    </g>
+  </g>
+</svg>
